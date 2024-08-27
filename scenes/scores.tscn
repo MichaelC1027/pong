@@ -1,0 +1,84 @@
+[gd_scene load_steps=13 format=3 uid="uid://cgmdl5fgtd2n"]
+
+[ext_resource type="Texture2D" uid="uid://d044jo2oqwvfb" path="res://assets/sprites/score/scores.png" id="1_pwqps"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ao6f7"]
+atlas = ExtResource("1_pwqps")
+region = Rect2(0, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_67ese"]
+atlas = ExtResource("1_pwqps")
+region = Rect2(20, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v3mfm"]
+atlas = ExtResource("1_pwqps")
+region = Rect2(40, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oxxrt"]
+atlas = ExtResource("1_pwqps")
+region = Rect2(60, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rbrr1"]
+atlas = ExtResource("1_pwqps")
+region = Rect2(80, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ujykm"]
+atlas = ExtResource("1_pwqps")
+region = Rect2(100, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eshgn"]
+atlas = ExtResource("1_pwqps")
+region = Rect2(120, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xfifw"]
+atlas = ExtResource("1_pwqps")
+region = Rect2(140, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bpdc4"]
+atlas = ExtResource("1_pwqps")
+region = Rect2(160, 0, 20, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mrwri"]
+atlas = ExtResource("1_pwqps")
+region = Rect2(180, 0, 20, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g6w26"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ao6f7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_67ese")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v3mfm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oxxrt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rbrr1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ujykm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eshgn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xfifw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bpdc4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mrwri")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Scores" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_g6w26")

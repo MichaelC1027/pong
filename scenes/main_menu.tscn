@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=3 uid="uid://jeg4nwaek6re"]
+
+[ext_resource type="Script" path="res://scenes/main_menu.gd" id="1_wxeq3"]
+
+[node name="MainMenu" type="Node2D"]
+script = ExtResource("1_wxeq3")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -23.0
+offset_top = -16.0
+offset_right = 1186.0
+offset_bottom = 670.0
+color = Color(0, 0, 0, 1)
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = 247.0
+offset_top = -19.0
+offset_right = 315.0
+offset_bottom = 16.0
+scale = Vector2(10, 10)
+text = "P O N G"
+
+[node name="startButton" type="Button" parent="."]
+offset_left = 494.0
+offset_top = 400.0
+offset_right = 659.0
+offset_bottom = 481.0
+text = "Start"
+
+[node name="quitButton" type="Button" parent="."]
+offset_left = 494.0
+offset_top = 511.0
+offset_right = 659.0
+offset_bottom = 592.0
+text = "Quit"
+
+[connection signal="pressed" from="startButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="quitButton" to="." method="_on_quit_button_pressed"]
